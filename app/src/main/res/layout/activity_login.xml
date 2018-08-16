@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorBackground"
+    tools:context="com.thomas.informatique.heh.be.projectandroid17_18.Activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_login_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Automation Controller"/>
+
+    <EditText
+        android:id="@+id/et_login_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/bt_login_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnLoginClickManager"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorBackground"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="sign in!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="No Account Yet?"/>
+
+        <Button
+            android:id="@+id/bt_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:onClick="OnLoginClickManager"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorBackground"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Register now"/>
+
+    </LinearLayout>
+
+</LinearLayout>
